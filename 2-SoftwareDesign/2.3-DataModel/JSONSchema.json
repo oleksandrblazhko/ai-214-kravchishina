@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Users": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "login": { "type": "string" },
+            "password": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "useName": { "type": "string" }
+          },
+          "required": ["login", "password", "email", "useName"]
+        }
+      }
+    },
+    "Trener": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "specialization": { "type": "string" },
+            "user id": { "type": "integer" }
+          },
+          "required": ["specialization", "user id"]
+        }
+      }
+    },
+    "Request for new sets of exercises": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "purpose": { "type": "string" },
+            "date": { "type": "string", "format": "date" },
+            "user id": { "type": "integer" }
+          },
+          "required": ["purpose", "date", "user id"]
+        }
+      }
+    },
+    "Answer to the requests": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "response text": { "type": "string" },
+            "date": { "type": "string", "format": "date" },
+            "request id": { "type": "integer" }
+          },
+          "required": ["response text", "date", "request id"]
+        }
+      }
+    },
+    "Expense record": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "Weight": { "type": "string" },
+            "Training time": { "type": "string" },
+            "user id": { "type": "integer" }
+          },
+          "required": ["Weight", "Training time", "user id"]
+        }
+      }
+    },
+    "Motivational message": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "response text": { "type": "string" },
+            "user id": { "type": "integer" }
+          },
+          "required": ["response text", "user id"]
+        }
+      }
+    }
+  },
+  "required": ["Users", "Trener", "Request for new sets of exercises", "Answer to the requests", "Expense record", "Motivational message"]
+}
