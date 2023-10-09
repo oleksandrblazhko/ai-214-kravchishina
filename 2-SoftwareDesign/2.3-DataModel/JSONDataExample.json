@@ -1,0 +1,62 @@
+{
+  "Users": {
+    "1": {
+      "login": "KravhiLena",
+      "password": "24062004",
+      "email": "kravhi@gmail.com",
+      "useName": "KravhiLena"
+    }
+  },
+  "Trener": {
+    "1": {
+      "specialization": "Фітнес тренер",
+      "user id": 1
+    }
+  },
+  "Request for new sets of exercises": {
+    "1": {
+      "purpose": "Я хотіла б отримати нові комплекси вправ для тренування на все тіло, будь-ласка1",
+      "date": "09.10.2023",
+      "user id": 1
+    },
+    "2": {
+      "purpose": "Хотілось комплекси по-складніше,будь-ласка!",
+      "date": "09.10.2023",
+      "user id": 1
+    }
+  },
+  "Answer to the requests": {
+    "1": {
+      "response text": "Ось такий варіант: 1.https://www.youtube.com/watch?v=mgO-fyMgY84",
+      "date": "09.10.2023",
+      "request id": 1
+    },
+    "2": {
+      "response text": "Ось такі вправи: 1.https://www.youtube.com/watch?v=I6xjhwN_wVw",
+      "date": "09.10.2023",
+      "request id": 2
+    }
+  },
+  "Expense record": {
+    "1": {
+      "Weight": "55",
+      "Training time": "80хв.",
+      "user id": 1
+    },
+    "2": {
+      "Weight": "50",
+      "Training time": "40хв.",
+      "user id": 1
+    }
+  },
+  "Motivational message": {
+    "1": {
+      "response text": "Ти молодець! З кожним разом результат в тебе краще. Дуже стараєшся, але можна зменшити час тренування. ",
+      "user id": 1
+    },
+    "2": {
+      "response text": "Вау, гарний результат,можу порекомендувати інші вправи! ",
+      "user id": 1
+    }
+  }
+}
