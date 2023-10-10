@@ -1,0 +1,151 @@
+{
+  "title": "Record of user",
+  "description": "This document records the details of a user",
+  "type": "object",
+  "properties": {
+    "Users": {
+      "description": "User details",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "login": {
+              "type": "string",
+              "description": "Логін користувача"
+            },
+            "password": {
+              "type": "string",
+              "description": "Пароль користувача"
+            },
+            "email": {
+              "type": "string",
+              "format": "email",
+              "description": "Електронна пошта користувача"
+            },
+            "useName": {
+              "type": "string",
+              "description": "Ім'я користувача"
+            }
+          },
+          "required": ["login", "password", "email", "useName"]
+        }
+      }
+    },
+    "Trener": {
+      "description": "Trainer details",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "specialization": {
+              "type": "string",
+              "description": "Спеціалізація тренера"
+            },
+            "user id": {
+              "type": "integer",
+              "description": "ID користувача"
+            }
+          },
+          "required": ["specialization", "user id"]
+        }
+      }
+    },
+    "Request for new sets of exercises": {
+      "description": "Request details",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string",
+              "description": "Мета запиту на нові комплекси вправ"
+            },
+            "date": {
+              "type": "string",
+              "format": "date",
+              "description": "Дата запиту"
+            },
+            "user id": {
+              "type": "integer",
+              "description": "ID користувача"
+            }
+          },
+          "required": ["purpose", "date", "user id"]
+        }
+      }
+    },
+    "Answer to the requests": {
+      "description": "Response details",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "response text": {
+              "type": "string",
+              "description": "Текст відповіді на запит"
+            },
+            "date": {
+              "type": "string",
+              "format": "date",
+              "description": "Дата відповіді"
+            },
+            "request id": {
+              "type": "integer",
+              "description": "ID запиту"
+            }
+          },
+          "required": ["response text", "date", "request id"]
+        }
+      }
+    },
+    "Expense record": {
+      "description": "Expense details",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "Weight": {
+              "type": "string",
+              "description": "Вага"
+            },
+            "Training time": {
+              "type": "string",
+              "description": "Час тренування"
+            },
+            "user id": {
+              "type": "integer",
+              "description": "ID користувача"
+            }
+          },
+          "required": ["Weight", "Training time", "user id"]
+        }
+      }
+    },
+    "Motivational message": {
+      "description": "Motivational message details",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "response text": {
+              "type": "string",
+              "description": "Текст мотиваційного повідомлення"
+            },
+            "user id": {
+              "type": "integer",
+              "description": "ID користувача"
+            }
+          },
+          "required": ["response text", "user id"]
+        }
+      }
+    }
+  },
+  "required": ["Users", "Trener", "Request for new sets of exercises", "Answer to the requests", "Expense record", "Motivational message"]
+}
