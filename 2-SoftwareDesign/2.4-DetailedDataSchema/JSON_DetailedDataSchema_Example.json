@@ -1,0 +1,143 @@
+{
+  "title": "Record of user",
+  "description": "This document records the details of a user",
+  "type": "object",
+  "properties": {
+    "UserDetails": {
+      "description": "User details",
+      "type": "object",
+      "Properties": {
+        "user_id": {
+          "type": "object",
+          "properties": {
+            "login": {
+              "description": "Логін користувача",
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{3,20}$",
+              "maxLength": 25
+            },
+            "password": {
+              "description": "Пароль користувача",
+              "type": "string",
+              "maxLength": 25
+            },
+            "email": {
+              "description": "Електронна пошта користувача",
+              "type": "string",
+              "format": "email"
+            },
+            "useName": {
+              "type": "string",
+              "description": "Ім'я користувача",
+              "minLength": 5,
+              "maxLength": 25
+            }
+          },
+          "required": ["login", "password", "email", "useName"]
+        }
+      }
+    },
+    "TrainerDetails": {
+      "description": "Trainer details",
+      "type": "object",
+      "properties": {
+        "trainer_id": {
+          "type": "integer",
+          "description": "ID тренера"
+        },
+        "name": {
+          "type": "string",
+          "description": "Ім'я тренера",
+          "minLength": 5,
+          "maxLength": 25
+        },
+        "specialization": {
+          "type": "string",
+          "description": "Спеціалізація тренера",
+          "maxLength": 45
+        }
+      },
+      "required": ["trainer_id", "name", "specialization"]
+    },
+    "RequestDetails": {
+      "description": "Request details",
+      "type": "object",
+      "properties": {
+        "purpose": {
+          "type": "string",
+          "description": "Мета запиту на нові комплекси вправ",
+          "maxLength": 500
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Дата запиту"
+        },
+        "user_id": {
+          "type": "integer",
+          "description": "ID користувача"
+        }
+      },
+      "required": ["purpose", "date", "user_id"]
+    },
+    "ResponseDetails": {
+      "description": "Response details",
+      "type": "object",
+      "properties": {
+        "response_text": {
+          "type": "string",
+          "description": "Текст відповіді на запит",
+          "maxLength": 500
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Дата відповіді"
+        },
+        "request_id": {
+          "type": "integer",
+          "description": "ID запиту"
+        }
+      },
+      "required": ["response_text", "date", "request_id"]
+    },
+    "ExpenseRecord": {
+      "description": "Expense details",
+      "type": "object",
+      "properties": {
+        "weight": {
+          "type": "string",
+          "description": "Вага",
+          "minimum": 0
+        },
+        "training_time": {
+          "type": "integer",
+          "description": "Час тренування",
+          "minimum": 15
+        },
+        "user_id": {
+          "type": "integer",
+          "description": "ID користувача"
+        }
+      },
+      "required": ["weight", "training_time", "user_id"]
+    },
+    "MotivationalMessage": {
+      "description": "Motivational message details",
+      "type": "object",
+      "properties": {
+        "response_text": {
+          "type": "string",
+          "description": "Текст мотиваційного повідомлення",
+          "maxLength": 500
+        },
+        "user_id": {
+          "type": "integer",
+          "description": "ID користувача"
+        }
+      },
+      "required": ["response_text", "user_id"]
+    }
+  },
+  "required": ["UserDetails", "TrainerDetails", "RequestDetails", "ResponseDetails", "ExpenseRecord", "MotivationalMessage"]
+}
