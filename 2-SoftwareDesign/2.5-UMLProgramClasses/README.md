@@ -1,2 +1,2 @@
 # UML-діаграма програмних класів
-![image](https://github.com/oleksandrblazhko/ai-214-kravchishina/assets/101953369/7e251f54-815b-4996-ab2a-4c863f3deae9)
+![image](https://github.com/oleksandrblazhko/ai-214-kravchishina/assets/101953369/cb3e8dfc-955d-489d-8167-6c0de632a030)
