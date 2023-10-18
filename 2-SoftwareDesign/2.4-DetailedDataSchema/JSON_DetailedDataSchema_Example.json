@@ -13,19 +13,17 @@
             "login": {
               "description": "Логін користувача",
               "type": "string",
-              "pattern": "^[A-Za-z0-9_-]{3,20}$",
-              "maxLength": 25
+              "pattern": "^[A-Za-z0-9_-]{6,25}$",
             },
             "password": {
               "description": "Пароль користувача",
               "type": "string",
-              "maxLength": 25
+              "pattern": "^(?=.*[a-z])(?=.*[A-Z])[A-Za-z!@#$%^&*()_+]{6,25}$"
             },
             "email": {
               "description": "Електронна пошта користувача",
               "type": "string",
               "format": "email"
-              "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$"
             },
             "useName": {
               "type": "string",
