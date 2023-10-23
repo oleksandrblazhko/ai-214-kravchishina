@@ -1,2 +1,2 @@
 
-![DataModel](https://github.com/oleksandrblazhko/ai-214-kravchishina/assets/101953369/9dee849d-ccaf-4f01-8c84-4e33c0f85401)
+![fLLBRzD04BxdLqnpJYFNj0XwAX9SU1J4uuGuhD9jik3OmRjfAb2bDkLHf4YzLE760S4PjuhRa3RkNvZzHypO3WgIMwNqv9t7PhxvvflDYZOYDAzru9S0Z3AUXFlF7g_2NM54wJtvoY-q3ClBm6Uor1gTomlbIcPwGLtvx7aGYes6UYXzCGcrXDQT84pptKNdfkiuYtzZOR2kFFca4PY0u-tG0](https://github.com/oleksandrblazhko/ai-214-kravchishina/assets/101953369/54ac475b-3052-49ed-9a39-c6af04f3c3a1)
