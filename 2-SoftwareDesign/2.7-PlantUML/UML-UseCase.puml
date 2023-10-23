@@ -10,7 +10,7 @@ rectangle Software {
     usecase (Send a exercise request)
 
    :User: -- (CreateAccount)
-   (CreateAccount) .> (Send a exesirce request) : include
+   (CreateAccount) .> (Send a exercise request) : include
 }
 
 @enduml
