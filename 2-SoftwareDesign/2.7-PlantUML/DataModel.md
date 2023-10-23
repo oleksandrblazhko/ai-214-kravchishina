@@ -1,1 +1,1 @@
-![fLNDRjD04BxdAQOvjv5hMWGz5Gak_1J4pmbnMALBif3OmRjfAb2bDkMdI95wgSAD0u8pRbMt8MtSLvXz8sRMiMGaKmLwyivyivblPhxPh6eZ8lDAXq45m2ZJad3toSCrk2sCgBmZN_MPbb5r1VXCbbgdStMnEf-PhR2X0lRSYyH6KzsNWSYXZj2w5qOktb_ohlkUjvHZZvgX2HdeHYsmxp6rV](https://github.com/oleksandrblazhko/ai-214-kravchishina/assets/101953369/2199dada-cade-4ce3-a766-4e80a6a646f7)
+![prog](https://github.com/oleksandrblazhko/ai-214-kravchishina/assets/101953369/8a1361b9-280b-44e7-b687-dc40c01162f1)
