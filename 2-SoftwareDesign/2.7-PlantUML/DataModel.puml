@@ -1,0 +1,69 @@
+@startjson
+
+title JSON Data 
+{
+  "User": {
+    "id": "1",
+    "login": "KravhiLena",
+    "password": "12345678",
+    "profilePhoto": "url фото",
+    "email": "kravhi@gmail.com@",
+    "userName": "KravhiLena",
+    "Requests_new_sets_of_exercices": [
+      {
+        "id": "1",
+        "purpose": "Я хотіла б отримати нові комплекси вправ для тренування на все тіло, будь-ласка",
+        "date": "09.10.2023",
+        "user id": "1"
+      },
+      {
+        "id": "2",
+        "purpose": "Хотілось комплекси по-складніше,будь-ласка!",
+        "date": "09.10.2023",
+        "user id": "1"
+      }
+    ],
+    "Expense record": [
+      {
+        "id": "1",
+        "weight": "55",
+        "Training time": "80",
+        "date": "29.09.2023",
+        "user id": "1"
+      },
+      {
+      "weight": "50 ",
+      "Training time": "40",
+      "date": "3.08.2023",
+      "user id": "1"
+    }
+    ],
+    "Motivational message": {
+      "id": "1",
+      "response text": "Ти молодець! З кожним разом результат в тебе краще. Дуже стараєшся, але можна зменшити час тренування. ",
+      "user id": "1"
+    },
+  },
+  "Trener": {
+      "id":"1",
+      "specialization": "Фітнес тренер",
+      "user id": "2",
+      "Request for new sets of exercises": [
+      {
+      "id":"1",
+      "response text": "Ось такий варіант: ",
+      "date": "09.10.2023",
+      "request id": 1
+      },
+      {
+      "id":"2",
+      "response text": "Ось такі вправи:" ,
+      "date": "09.10.2023",
+      "request id": 2
+      }
+    ]
+  }
+}
+
+
+@endjson
