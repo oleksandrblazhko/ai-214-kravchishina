@@ -8,7 +8,7 @@
     "profilePhoto": "url фото",
     "email": "kravhi@gmail.com",
     "userName": "KravhiLena",
-    "Requests new sets ofexercises": [
+    "Requests new sets of exercises": [
       {
         "id": "1",
         "purpose": "Я хотіла б отримати нові комплекси вправ для тренування на все тіло, будь-ласка",
@@ -42,7 +42,7 @@
       "user id": "1"
     }
   },
-  "Trener": {
+  "Trainer": {
     "id": "1",
     "specialization": "Фітнес тренер",
     "user id": "2",
