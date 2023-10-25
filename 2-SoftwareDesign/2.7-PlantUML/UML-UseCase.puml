@@ -1,0 +1,16 @@
+@startuml
+
+title Usecase 
+left to right direction
+actor :User:
+
+rectangle Software {
+
+    usecase (CreateAccount)
+    usecase (Send a exercise request)
+
+   :User: -- (CreateAccount)
+   (CreateAccount) .> (Send a exercise request) : include
+}
+
+@enduml

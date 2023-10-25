@@ -1,0 +1,19 @@
+@startuml
+title Activity Diagram 
+
+start
+:The user makes a request to the trainer for new sets of exercises;
+if (Successfully?) then (Yes)
+  :The trainer responds to the request;
+  :Gives access to the catalog with exercises;
+  if (Successfully?) then (Yes)
+    :The user chooses exercises;
+  else (No)
+    :Error access;
+  endif
+else (No)
+  :Wait for a response request;
+endif
+stop
+
+@enduml
